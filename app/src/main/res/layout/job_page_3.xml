@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mstb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1AFF9800"
+    android:padding="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:id="@+id/scrollView_frag3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_jobDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="Job Details"
+                        android:textColor="@color/OrangeDark"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/divider6"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/DarkGrey" />
+
+                    <TextView
+                        android:id="@+id/tv_skills"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="Job Category"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_selectSkills"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/Orange"
+                            app:cardCornerRadius="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_selectSkills"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:text="@string/Select"
+                                android:textColor="@android:color/white"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </androidx.cardview.widget.CardView>
+
+                        <EditText
+                            android:id="@+id/et_skillReq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/back_grey_round_corners"
+                            android:clickable="false"
+                            android:editable="false"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:inputType="textPersonName"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_qualification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="Qualification"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_qualification"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checkedButton="@id/rb_q3">
+
+                        <RadioButton
+                            android:id="@+id/rb_q1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="10th or Below"
+                            android:textColor="@color/Orange"
+                            android:textSize="17dp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="12th Passed"
+                            android:textColor="@color/Orange"
+                            android:textSize="17dp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="ITI/Diploma"
+                            android:textColor="@color/Orange"
+                            android:textSize="17dp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="Graduation"
+                            android:textColor="@color/Orange"
+                            android:textSize="17dp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_q5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="Post-Graduation"
+                            android:textColor="@color/Orange"
+                            android:textSize="17dp" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/tv_preferredCourse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="Preferred Course/ Degree"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/et_preferredCourse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/back_grey_round_corners"
+                        android:inputType="textLongMessage|textMultiLine|textImeMultiLine|textCapWords"
+                        android:padding="10dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_salaryRange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/Salary"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_salaryBenefit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/SalaryBenefit"
+                        android:textColor="@color/DarkGrey"
+                        android:textSize="14dp" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_salary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:checkedButton="@id/rb_salary1">
+
+                        <RadioButton
+                            android:id="@+id/rb_salary1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="As per Industry Norms"
+                            android:textColor="@color/Orange"
+                            android:textSize="17dp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_salary2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="Specific Salary"
+                            android:textColor="@color/Orange"
+                            android:textSize="17dp" />
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:id="@+id/ll_salaryRange"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/et_minSalary"
+                            android:layout_width="100dp"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_horizontal"
+                            android:layout_weight="1"
+                            android:background="@drawable/back_grey_round_corners"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:padding="10dp"
+                            android:paddingRight="50dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tv_to"
+                            android:layout_width="40sp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_horizontal"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="@string/to"
+                            android:textAlignment="center"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/et_maxSalary"
+                            android:layout_width="100dp"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_horizontal"
+                            android:layout_weight="1"
+                            android:background="@drawable/back_grey_round_corners"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:padding="10dp"
+                            android:paddingRight="50dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_salaryPeriod"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/back_filled_dadrk_orange_3dpcorners"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ToggleButton
+                            android:id="@+id/toggleButton_perDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="2sp"
+                            android:layout_marginTop="2sp"
+                            android:layout_marginBottom="2sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/back_filled_dark_orange_0dpcorners"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="ToggleButton"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textOff="@string/perDay"
+                            android:textOn="@string/perDay"
+                            android:textSize="15dp" />
+
+                        <ToggleButton
+                            android:id="@+id/toggleButton_perMonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="2sp"
+                            android:layout_marginBottom="2sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/back_filled_white_0dpcorners"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="ToggleButton"
+                            android:textAllCaps="false"
+                            android:textColor="@color/OrangeDark"
+                            android:textOff="@string/perMonth"
+                            android:textOn="@string/perMonth"
+                            android:textSize="15dp" />
+
+                        <ToggleButton
+                            android:id="@+id/toggleButton_perYear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="2sp"
+                            android:layout_marginRight="2sp"
+                            android:layout_marginBottom="2sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/back_filled_white_0dpcorners"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="ToggleButton"
+                            android:textAllCaps="false"
+                            android:textColor="@color/OrangeDark"
+                            android:textOff="@string/perYear"
+                            android:textOn="@string/perYear"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_minExp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="Minimum Experience Required"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+
+                    <RadioGroup
+                        android:id="@+id/rg_minExpReq"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checkedButton="@id/rb_minExp2">
+
+                        <RadioButton
+                            android:id="@+id/rb_minExp1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="@string/Fresher"
+                            android:textColor="@color/Orange"
+                            android:textSize="17dp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_minExp2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="1-2 Years"
+                            android:textColor="@color/Orange"
+                            android:textSize="17dp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_minExp3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="3-5 Years"
+                            android:textColor="@color/Orange"
+                            android:textSize="17dp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_minExp4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="5-8 Years"
+                            android:textColor="@color/Orange"
+                            android:textSize="17dp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_minExp5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="More than 8 Years"
+                            android:textColor="@color/Orange"
+                            android:textSize="17dp" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/tv_cvReq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/Receive_CV"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/back_filled_dadrk_orange_3dpcorners"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/toggleButton_cvYes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="2sp"
+                            android:layout_marginTop="2sp"
+                            android:layout_marginBottom="2sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/back_filled_dark_orange_0dpcorners"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="ToggleButton"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textOff="@string/YesText"
+                            android:textOn="@string/YesText"
+                            android:textSize="15dp" />
+
+                        <ToggleButton
+                            android:id="@+id/toggleButton_cvNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="2sp"
+                            android:layout_marginBottom="2sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/back_filled_white_0dpcorners"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="ToggleButton"
+                            android:textAllCaps="false"
+                            android:textColor="@color/OrangeDark"
+                            android:textOff="@string/NoText"
+                            android:textOn="@string/NoText"
+                            android:textSize="15dp" />
+
+                        <ToggleButton
+                            android:id="@+id/toggleButton_cvOptional"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="2sp"
+                            android:layout_marginRight="2sp"
+                            android:layout_marginBottom="2sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/back_filled_white_0dpcorners"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="ToggleButton"
+                            android:textAllCaps="false"
+                            android:textColor="@color/OrangeDark"
+                            android:textOff="@string/OptionalText"
+                            android:textOn="@string/OptionalText"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_hirePosition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/hirePosition"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/et_hirePosition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/back_grey_round_corners"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_back_frag3_job"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                app:cardBackgroundColor="@color/Orange"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/alegreya_sans"
+                    android:text="@string/back"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_continue_frag3_job"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                app:cardBackgroundColor="@color/Orange"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/alegreya_sans"
+                    android:text="@string/Continue"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

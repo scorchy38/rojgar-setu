@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Employer.NavDrawer.CheckJobsPostedStatus.EmployerCheckJobsPostedStatus2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/custom_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="@color/Orange"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="4dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="8dp"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/hamburger" />
+
+                <TextView
+                    android:id="@+id/currentHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/alegreya_sans"
+                    android:text="@string/Job_Details"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView7"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_changelang"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/share_icon" />
+
+                <ImageView
+                    android:id="@+id/iv_changelang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/change_lang" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                app:contentPaddingBottom="15dp"
+                app:contentPaddingLeft="15dp"
+                app:contentPaddingRight="15dp"
+                app:contentPaddingTop="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lc_jobtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="@string/Job_Title"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/et_frag2_checkjobpostedstatus_jobTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/border_grey_back_white_round_corners"
+                            android:enabled="false"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:inputType="textPersonName|textCapWords"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/lc_jobdescription3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="@string/Job_Description"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/et_frag2_checkjobpostedstatus_jobDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/border_grey_back_white_round_corners"
+                            android:enabled="false"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:inputType="textLongMessage|textMultiLine|textPersonName|textCapWords"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp" />
+
+
+                        <TextView
+                            android:id="@+id/lc_companyname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="@string/company_Name"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/et_frag2_checkjobpostedstatus_company"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/border_grey_back_white_round_corners"
+                            android:enabled="false"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:inputType="textLongMessage|textMultiLine|textPersonName|textCapWords"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/lc_state3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="@string/State"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp" />
+
+                        <Spinner
+                            android:id="@+id/spinner_frag2_checkjobpostedstatus_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/back_grey_round_corners" />
+
+                        <TextView
+                            android:id="@+id/lc_district3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="@string/District"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp" />
+
+                        <Spinner
+                            android:id="@+id/spinner_frag2_checkjobpostedstatus_district"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/back_grey_round_corners" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="@string/Salary"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="@string/SalaryBenefit"
+                            android:textColor="@color/DarkGrey"
+                            android:textSize="14dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_frag2_checkjobpostedstatus_startingRs"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|center_horizontal"
+                                android:layout_weight="1"
+                                android:background="@drawable/back_grey_round_corners"
+                                android:enabled="false"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:padding="10dp"
+                                android:paddingRight="50dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|center_horizontal"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="@string/to"
+                                android:textAlignment="center"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/et_frag2_checkjobpostedstatus_endingRs"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|center_horizontal"
+                                android:layout_weight="1"
+                                android:background="@drawable/back_grey_round_corners"
+                                android:enabled="false"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:padding="10dp"
+                                android:paddingRight="50dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/back_filled_dadrk_orange_3dpcorners"
+                            android:orientation="horizontal">
+
+                            <ToggleButton
+                                android:id="@+id/tb_frag2_checkjobpostedstatus_perDay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/back_filled_dark_orange_0dpcorners"
+                                android:enabled="false"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:text="ToggleButton"
+                                android:textAllCaps="false"
+                                android:textColor="@android:color/white"
+                                android:textOff="@string/perDay"
+                                android:textOn="@string/perDay"
+                                android:textSize="15dp" />
+
+                            <ToggleButton
+                                android:id="@+id/tb_frag2_checkjobpostedstatus_perMonth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/back_filled_white_0dpcorners"
+                                android:enabled="false"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:text="ToggleButton"
+                                android:textAllCaps="false"
+                                android:textColor="@color/OrangeDark"
+                                android:textOff="@string/perMonth"
+                                android:textOn="@string/perMonth"
+                                android:textSize="15dp" />
+
+                            <ToggleButton
+                                android:id="@+id/tb_frag2_checkjobpostedstatus_perYear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/back_filled_white_0dpcorners"
+                                android:enabled="false"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:text="ToggleButton"
+                                android:textAllCaps="false"
+                                android:textColor="@color/OrangeDark"
+                                android:textOff="@string/perYear"
+                                android:textOn="@string/perYear"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/lc_cvreq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="@string/Receive_CV"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/back_filled_dadrk_orange_3dpcorners"
+                            android:orientation="horizontal">
+
+                            <ToggleButton
+                                android:id="@+id/tb_frag2_checkjobpostedstatus_Yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/back_filled_dark_orange_0dpcorners"
+                                android:enabled="false"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:text="ToggleButton"
+                                android:textAllCaps="false"
+                                android:textColor="@android:color/white"
+                                android:textOff="@string/YesText"
+                                android:textOn="@string/YesText"
+                                android:textSize="15dp" />
+
+                            <ToggleButton
+                                android:id="@+id/tb_frag2_checkjobpostedstatus_No"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/back_filled_white_0dpcorners"
+                                android:enabled="false"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:text="ToggleButton"
+                                android:textAllCaps="false"
+                                android:textColor="@color/OrangeDark"
+                                android:textOff="@string/NoText"
+                                android:textOn="@string/NoText"
+                                android:textSize="15dp" />
+
+                            <ToggleButton
+                                android:id="@+id/tb_frag2_checkjobpostedstatus_Optional"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/back_filled_white_0dpcorners"
+                                android:enabled="false"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:text="ToggleButton"
+                                android:textAllCaps="false"
+                                android:textColor="@color/OrangeDark"
+                                android:textOff="@string/OptionalText"
+                                android:textOn="@string/OptionalText"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="@string/hirePosition"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp" />
+
+
+                        <EditText
+                            android:id="@+id/et_frag2_checkjobpostedstatus_hirePosition"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/back_grey_round_corners"
+                            android:enabled="false"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:inputType="number"
+                            android:padding="10dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/titlecjps_skills"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="@string/skills"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/selectSkills"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/Orange"
+                                app:cardCornerRadius="5dp">
+
+                                <TextView
+                                    android:id="@+id/textView46"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/alegreya_sans"
+                                    android:text="@string/Select"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+                            </androidx.cardview.widget.CardView>
+
+                            <EditText
+                                android:id="@+id/et_skillReq"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/back_grey_round_corners"
+                                android:clickable="false"
+                                android:editable="false"
+                                android:ems="10"
+                                android:enabled="false"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:inputType="textLongMessage|textMultiLine|textPersonName"
+                                android:padding="10dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/lc_phone3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="@string/Contact_Number"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/et_frag2_checkjobpostedstatus_contactNumber"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/back_grey_round_corners"
+                            android:enabled="false"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:inputType="number|phone"
+                            android:maxLength="10"
+                            android:padding="10dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/lc_address3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="@string/Address"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/et_frag2_checkjobpostedstatus_Address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/back_grey_round_corners"
+                            android:enabled="false"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:inputType="textMultiLine|textPostalAddress|textCapWords"
+                            android:padding="10dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp" />
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_checkJobsPosted_back"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/Orange"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp"
+                    app:contentPadding="5sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:gravity="center"
+                        android:text="@string/back"
+                        android:textColor="@android:color/white"
+                        android:textSize="16dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_checkJobsPosted_delete"
+                    android:layout_width="240dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardBackgroundColor="@android:color/holo_red_dark"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp"
+                    app:contentPadding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/deleteJob"
+                        android:textColor="@android:color/white"
+                        android:textSize="16dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_checkJobsPostedEdit"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/Orange"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp"
+                    app:contentPadding="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:gravity="center"
+                        android:text="@string/editDetails"
+                        android:textColor="@android:color/white"
+                        android:textSize="16dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_checkJobsPosted_accept"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/Orange"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp"
+                    app:contentPadding="5sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/accept_icon_2" />
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</FrameLayout>

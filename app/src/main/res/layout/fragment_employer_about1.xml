@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".Employer.NavDrawer.About.EmployerAboutFragment1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:paddingBottom="20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_companyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/company_Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_companyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/back_grey_round_corners"
+                        android:enabled="false"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:inputType="textPersonName|textCapWords"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/tv_contactNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/contactNum"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_contactNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/back_grey_round_corners"
+                        android:digits="0123456789"
+                        android:enabled="false"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:inputType="number|phone"
+                        android:maxLength="10"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_contactEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/contactEmail"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_contactEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/back_grey_round_corners"
+                        android:enabled="false"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:inputType="textWebEmailAddress|textEmailAddress"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp" />
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_resetPass"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                app:cardBackgroundColor="@color/Orange"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/alegreya_sans"
+                    android:text="@string/Reset_Password"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_employerAbout_edit"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                app:cardBackgroundColor="@color/Orange"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                app:contentPaddingLeft="20sp"
+                app:contentPaddingRight="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/alegreya_sans"
+                    android:text="@string/editDetails"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_employer_about_accept"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/Orange"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/accept_icon_2" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

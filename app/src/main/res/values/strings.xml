@@ -1,0 +1,306 @@
+<resources>
+    <string name="app_name">Rojgar Setu</string>
+    <string name="employer_registration_form">Employer Registration Form</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <string-array name="establishment_category">
+        <item>Select</item>
+        <item>Large Scale Industry</item>
+        <item>MSME</item>
+        <item>Contractors</item>
+        <item>Builders</item>
+    </string-array>
+
+
+    <string-array name="establishment_sector">
+        <item>Select</item>
+        <item>Shop</item>
+        <item>Theatre or Places of Amusement</item>
+        <item>Contractor: Civil, Road Works</item>
+        <item>Builder: Railway Projects</item>
+    </string-array>
+
+    <string-array name="establishment_subsector">
+        <item>Select</item>
+        <item>Contractor</item>
+    </string-array>
+
+    <string-array name="establishment_state">
+        <item>Select</item>
+        <item>Delhi/NCR</item>
+        <item>Maharashtra</item>
+        <item>Madhya Pradesh</item>
+        <item>Uttar Pradesh</item>
+
+    </string-array>
+
+    <string-array name="establishment_district">
+        <item>Select</item>
+        <item>Agra</item>
+        <item>Amethi</item>
+        <item>Bareily</item>
+        <item>Lucknow</item>
+        <item>Sultanpur</item>
+        <item>Varanasi</item>
+    </string-array>
+
+    <string-array name="establishment_status">
+        <item>Select</item>
+        <item>Open</item>
+        <item>Close</item>
+        <item>Partly open</item>
+    </string-array>
+    <string-array name="salary_Spinner">
+        <item>per Year</item>
+        <item>per Month</item>
+    </string-array>
+
+    <string-array name="CV_array">
+        <item>Yes</item>
+        <item>No</item>
+        <item>Optional</item>
+    </string-array>
+
+    <string name="title_activity_splash" translatable="false">SplashActivity</string>
+    <string name="dummy_button" translatable="false">Dummy Button</string>
+    <string name="dummy_content" translatable="false">DUMMY\nCONTENT</string>
+
+
+    <string name="Employer_Details">Employer Details</string>
+    <string name="Post_A_Job">Post A Job</string>
+    <string name="Getting_Started">Getting Started</string>
+    <string name="Job_Title">Job Title*</string>
+    <string name="Job_Name">Job Name*</string>
+    <string name="company_Name">Company Name*</string>
+    <string name="location">Location*</string>
+    <string name="Continue">Continue</string>
+    <string name="Job_Details">Job Details</string>
+    <string name="Type_of_Job">What type of job is this?*</string>
+    <string name="Full_Time">Full Time</string>
+    <string name="Part_Time">Part Time</string>
+    <string name="Temporary">Temporary</string>
+    <string name="Contract">Contract</string>
+    <string name="Internship">Internship</string>
+    <string name="Commission">Commission</string>
+    <string name="Fresher">Fresher</string>
+    <string name="Other">Other</string>
+    <string name="Select">Select</string>
+    <string name="confirmText">Confirm</string>
+    <string name="YesText">Yes</string>
+    <string name="NoText">No</string>
+    <string name="OptionalText">Optional</string>
+    <string name="State">State*</string>
+    <string name="District">District*</string>
+    <string name="Login"> Login </string>
+    <string name="JobSeeker">Job Seeker</string>
+    <string name="JobProvider">Job Provider</string>
+    <string name="EnterMobileNumber">Please enter your Mobile Number</string>
+    <string name="GenerateOTP">Generate OTP</string>
+    <string name="EnterOTP"> Enter OTP </string>
+    <string name="ResendOTP">Resend OTP</string>
+    <string name="AutoDetectingOTP">Auto Detecting OTP</string>
+    <string name="SendingOTP">Sending OTP</string>
+    <string name="loginAsEmployer">Login as Employer</string>
+    <string name="loginAsEmployee">Login as Job Seeker</string>
+    <string name="continue_text">Continue</string>
+    <string name="LoggingIn">Logging In...</string>
+    <string name="deleteAccount">Delete Account</string>
+    <string name="deleteConfirm">Are you sure you want to delete this Account?</string>
+
+
+    <string-array name="JobTypeArray">
+        <item>@string/Select</item>
+        <item>@string/Full_Time</item>
+        <item>@string/Part_Time</item>
+        <item>@string/Temporary</item>
+        <item>@string/Contract</item>
+        <item>@string/Internship</item>
+        <item>@string/Commission</item>
+        <item>@string/Fresher</item>
+        <item>@string/Other</item>
+    </string-array>
+
+
+    <string name="Salary">What is the salary range for this job? *</string>
+    <string name="SalaryBenefit">Jobs with salary information tend to get more applies.</string>
+    <string name="to">to</string>
+    <string name="perDay"> per Day </string>
+    <string name="perMonth"> per Month </string>
+    <string name="perYear"> per Year </string>
+    <string name="hirePosition">How many hires do you want to make for this position?*</string>
+    <string name="Application_Settings">Application Settings</string>
+    <string name="Contact_Number">Contact Number*</string>
+    <string name="back">Back</string>
+    <string name="submit">Submit</string>
+    <string name="Address">Address*</string>
+    <string name="Receive_CV">Do you want applicants to submit a CV?*</string>
+    <string name="employer_registration">Employer Registration</string>
+    <string name="ownerdetails">1. Owner/Manager Details</string>
+    <string name="Post_Job" translatable="false">Post Job</string>
+    <string name="Settings" translatable="false">Settings</string>
+    <string name="Applicant" translatable="false">Applicant</string>
+    <string name="employee_registration">Employee Registration</string>
+    <string name="establishment_category">Establishment Category*</string>
+    <string name="establishment_sector">Establishment Sector</string>
+    <string name="establishment_sub_sector">Establishment Sub Sector</string>
+    <string name="phone_number">Phone Number*</string>
+    <string name="work_experience">Work Experience (in Months)*</string>
+    <string name="name">Name*</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="Donot_have_an_account">Don\'t have an account?</string>
+    <string name="Register">Register</string>
+    <string name="Check_Jobs_Posted_Status">Check Jobs Posted Status</string>
+    <string name="Exit">Exit</string>
+    <string name="About">About</string>
+    <string name="SignOut">SignOut</string>
+    <string name="Personal">Personal</string>
+    <string name="Owner_Name">Owner Name*</string>
+    <string name="Manager_Name">Manager Name*</string>
+    <string name="Manager_Mobile_Number">Manager Mobile Number*</string>
+    <string name="Manager_Email_ID">Manager Email ID*</string>
+    <string name="Organisation_Details">2. Organisation Details</string>
+    <string name="Full_Name_Establishment">Full Name of Factory/Establishment*</string>
+    <string name="Establishment_Address">Establishment Address*</string>
+    <string name="Establishment_Category">Establishment Category*</string>
+    <string name="Establishment_Sector">Establishment Sector*</string>
+    <string name="Establishment_Sub_Sector">Establishment Sub Sector</string>
+    <string name="Pin_Code">Pin Code</string>
+    <string name="Website">Website URL</string>
+    <string name="status_unit">What is the status of your unit?*</string>
+    <string name="Sign_Up_Details">3. Sign Up Details</string>
+    <string name="Re_Password">Re-Type Password*</string>
+    <string name="savingData">Saving Data</string>
+    <string name="editDetails">Edit Details</string>
+    <string name="changingDetails">Changing Details</string>
+    <string name="Job_Title_without">Job Title</string>
+    <string name="company_without">Company Name</string>
+    <string name="state_without">State</string>
+    <string name="District_without">District</string>
+    <string name="Type_of_Job_without">What type of job is this?</string>
+    <string name="Salary_without">What is the salary range for this job?</string>
+    <string name="Receive_CV_without">Do you want applicants to submit a CV?</string>
+    <string name="Contact_Number_without">Contact Number</string>
+    <string name="Address_without">Address</string>
+    <string name="View_Applicants">View Applicants</string>
+    <string name="deleteJob">Delete Job</string>
+    <string name="deletingJob"> Deleting this Job</string>
+    <string name="logOut">Log-Out</string>
+    <string name="Offer">Offer</string>
+    <string name="Download_CV">Download CV</string>
+    <string name="Upload_CV">Upload CV</string>
+    <string name="Tap_Button_To_Reupload">Tap the button again to Re-Upload</string>
+    <string name="Apply">Apply</string>
+    <string name="Home">Home</string>
+    <string name="Job_Offered">Job Offered :</string>
+    <string name="View_Details">View Details</string>
+    <string name="Applicant_Name">Applicant Name:</string>
+    <string name="View_Applicant_Details">View Applicant Details</string>
+    <string name="No_of_Applicants_Left">No. of New Applicants Applied:</string>
+    <string name="No_of_Accepted_Applicants">No. of Accepted Applicants:</string>
+    <string name="Contact_Applicant">Contact Applicant</string>
+    <string name="Reject">Reject</string>
+    <string name="Accept">Accept</string>
+    <string name="View_Accepted_Applicants">View Accepted Applicants</string>
+    <string name="Search_Job">Search Job</string>
+    <string name="Applied_Job">Applied Job</string>
+    <string name="Applied_Job_Details">Applied Job Details</string>
+    <string name="Change_Language">Change Language</string>
+    <string name="skill">Skill</string>
+    <string name="Employer">Employer</string>
+    <string name="Employee_Section">Employee Section</string>
+    <string name="Employer_Section">Employer Section</string>
+    <string name="MoveOut"> Move Out </string>
+    <string name="Profile">Profile</string>
+    <string name="Decision_Pending">Decision Pending</string>
+    <string name="sector">Sector</string>
+    <string name="All">All</string>
+    <string name="SliderText4">Apply for a job you want and send in your Resume or CV</string>
+    <string name="SliderText3">Then these job posting will be shown to you on the basis of where the job is located and your area of expertise</string>
+    <string name="SliderText5">Employer will choose the candidates that they prefer and will get in touch with them</string>
+    <string name="SliderText2">First the employer will post a job requirement that he/she wishes to fill</string>
+    <string name="SliderText1">Welcome to the RojgarSetu App. Let us guide you through the basic features of this application</string>
+    <string name="Jobs_Posted">Jobs Posted</string>
+    <string name="Applicants">Applicants</string>
+    <string name="Accepted">Accepted</string>
+    <string name="Post_New_Job">Post New Job</string>
+    <string name="Name_without">Name</string>
+    <string name="Establishment_Category_without">Establishment Category</string>
+    <string name="work_experience_without">Work Experience (in Months)</string>
+    <string name="hirePosition_without">How many hires do you want to make for this position?</string>
+    <string name="location_without">Location</string>
+    <string name="Job_Description">Job Description*</string>
+    <string name="Job_Description_without">Job Description</string>
+    <string name="Algolia_App_ID" translatable="false">FA09170ES2</string>
+    <string name="Algolia_Api_Key" translatable="false">0b5b9195c53a71fc0e974fa901bbed78</string>
+
+    <string name="title_activity_profession" translatable="false">FullscreenActivity</string>
+    <string name="Applicant_Accept">Applicant Accept</string>
+    <string name="jobTitle">Job Title</string>
+    <string name="jobDesc">Job Description</string>
+    <string name="jobType">Job Type</string>
+    <string name="salary">Salary</string>
+    <string name="cvRequired">CV Required?</string>
+    <string name="skills">Skills</string>
+    <string name="cvUploaded">CV Uploaded</string>
+    <string name="applicationStatus">Application Status: </string>
+    <string name="All_Sectors">All Sectors</string>
+    <string name="Country">Country</string>
+    <string name="Change">Change</string>
+    <string name="Applied">Applied</string>
+    <string name="SkillsRequired">Skills Required</string>
+    <string name="Dialog_apply_job">Are you sure you want to apply for this job?</string>
+    <string name="Apply_Job">Apply Job</string>
+    <string name="Dialog_exit">Are you sure you want to exit?</string>
+    <string name="Search">Search</string>
+    <string name="Forgot_Password">Forgot Password?</string>
+    <string name="Reset_Password">Reset Password</string>
+    <string name="Send_Link_to_the_Registered_Email_ID">Send Link to the Registered Email ID</string>
+    <string name="Old_Password">Old Password</string>
+    <string name="New_Password">New Password</string>
+    <string name="Re_Type_New_Password">Re-Type New Password</string>
+
+    <string name="contact_us">Contact Us</string>
+    <string name="skillsLimit">You can select a maximum of 5 Skills</string>
+    <string name="selectYourSkills">Select your Skills/Profession</string>
+    <string name="title_activity_new_employer_registration" translatable="false">FullscreenActivity</string>
+    <string name="companyName">Full Name of Company*</string>
+    <string name="contactPersonName">Contact Person Name</string>
+    <string name="contactNum">Contact Number*</string>
+    <string name="contactEmail">Contact Email*</string>
+    <string name="altNum">Alternate Number</string>
+    <string name="sector_">Sector*</string>
+    <string name="qualifications">Qualification</string>
+    <string name="googleSignInWebClientId" translatable="false">283304693909-v2ot2g3c2l0djbuvq4vthp2nigr48hv9.apps.googleusercontent.com</string>
+    <string name="title_activity_employer_basic_profile" translatable="false">FullscreenActivity</string>
+    <string name="title_activity_post_job" translatable="false">FullscreenActivity</string>
+    <string name="Call_Now">Call Now</string>
+    <string name="Send_Email">Send Email</string>
+    <string name="Job_Location">Job Location/s</string>
+    <string name="Skills_Required">Skills Required</string>
+    <string name="Salary_employee">Salary</string>
+    <string name="Job_Type">Job Type</string>
+    <string name="CV_Required">CV Required</string>
+    <string name="All_Jobs">All Jobs</string>
+    <string name="Interested_Job_Categories">Interested Job Categories</string>
+    <string name="ten_or_Below">10th or Below</string>
+    <string name="twelth_Passed">12th Passed</string>
+    <string name="ITIDiploma">ITI/Diploma</string>
+    <string name="Graduation">Graduation</string>
+    <string name="PostGraduation">Post-Graduation</string>
+    <string name="first_Years">1-2 Years</string>
+    <string name="three_years">3-5 Years</string>
+    <string name="five_years">5-8 Years</string>
+    <string name="eight_Years">More than 8 Years</string>
+    <string name="Employee_Details">Employee Details</string>
+    <string name="Update_Profile_Picture">Update Profile Picture</string>
+    <string name="Minimum_exp">Minimum Experience Required</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="other">Other</string>
+
+
+</resources>

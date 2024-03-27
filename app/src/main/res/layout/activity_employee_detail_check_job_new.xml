@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B7FFFFFF"
+    tools:context=".Employee.CheckJob.EmployeeDetailCheckJob">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_apply"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                app:cardBackgroundColor="@android:color/holo_green_dark"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_apply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/alegreya_sans"
+                    android:text="@string/Apply"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_back"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                app:cardBackgroundColor="@color/Orange"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/alegreya_sans"
+                    android:text="@string/back"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/companyName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="20dp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:gravity="left"
+                            android:text="---"
+                            android:textColor="@color/OrangeDark"
+                            android:textSize="17dp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/cmp_logoCard"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/companyAddress"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="20dp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:gravity="left"
+                            android:text="---"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/cmp_logoCard"
+                            app:layout_constraintTop_toBottomOf="@+id/companyName" />
+
+                        <View
+                            android:id="@+id/divider33"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="?android:attr/listDivider"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/companyAddress" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cmp_logoCard"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardCornerRadius="4dp"
+                            app:cardElevation="4dp"
+                            app:layout_constraintBottom_toTopOf="@+id/divider33"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/cmp_logo"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/update_logo" />
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView33"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/contact_person" />
+
+                            <TextView
+                                android:id="@+id/tv_contactName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/alegreya_sans"
+                                android:text="---"
+                                android:textColor="@color/Orange"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/call_card"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:onClick="callEmployer"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageView27"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@drawable/dial_new" />
+
+                                    <TextView
+                                        android:id="@+id/tv_contactNum"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="10dp"
+                                        android:fontFamily="@font/alegreya_sans"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/Call_Now"
+                                        android:textColor="@color/OrangeDark"
+                                        android:textSize="16dp" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/email_card"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:onClick="emailEmployer"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageView28"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@drawable/email" />
+
+                                    <TextView
+                                        android:id="@+id/tv_contactEmail"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="10dp"
+                                        android:fontFamily="@font/alegreya_sans"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/Send_Email"
+                                        android:textColor="@color/OrangeDark"
+                                        android:textSize="16dp" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_jobTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="40dp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:gravity="center"
+                            android:text="---"
+                            android:textColor="@color/OrangeDark"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_jobDescription"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginBottom="15dp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:gravity="center"
+                            android:text="---"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_jobTitle" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_jobLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5sp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:gravity="center"
+                            android:text="@string/Job_Location"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/et_jobLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:gravity="center"
+                            android:text="---"
+                            android:textColor="@color/Orange"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    app:cardBackgroundColor="#F5FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="180dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="4dp"
+                                    android:layout_weight="1"
+                                    app:cardElevation="5dp"
+                                    app:contentPadding="5dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_skills"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginRight="8dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:fontFamily="@font/alegreya_sans"
+                                            android:gravity="center"
+                                            android:text="@string/Skills_Required"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="15dp" />
+
+                                        <TextView
+                                            android:id="@+id/et_skills"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginRight="8dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:fontFamily="@font/alegreya_sans"
+                                            android:gravity="center"
+                                            android:text="---"
+                                            android:textColor="@color/Orange"
+                                            android:textSize="16.5dp" />
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="180dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="4dp"
+                                    android:layout_weight="1"
+                                    app:cardElevation="5dp"
+                                    app:contentPadding="5dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_qualification"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginRight="8dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:fontFamily="@font/alegreya_sans"
+                                            android:gravity="center"
+                                            android:text="@string/qualifications"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="15dp" />
+
+                                        <TextView
+                                            android:id="@+id/et_qualification"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginRight="8dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:fontFamily="@font/alegreya_sans"
+                                            android:gravity="center"
+                                            android:text="---"
+                                            android:textColor="@color/Orange"
+                                            android:textSize="16.5dp" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="180dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="4dp"
+                                    android:layout_weight="1"
+                                    app:cardElevation="5dp"
+                                    app:contentPadding="5dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_salaryRange"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5sp"
+                                            android:layout_marginTop="8sp"
+                                            android:layout_marginRight="8sp"
+                                            android:layout_marginBottom="5sp"
+                                            android:fontFamily="@font/alegreya_sans"
+                                            android:gravity="center"
+                                            android:text="@string/Salary_employee"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="15dp" />
+
+                                        <TextView
+                                            android:id="@+id/et_salaryRange"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5sp"
+                                            android:layout_marginTop="8sp"
+                                            android:layout_marginRight="8sp"
+                                            android:layout_marginBottom="5sp"
+                                            android:fontFamily="@font/alegreya_sans"
+                                            android:gravity="center"
+                                            android:text="---"
+                                            android:textColor="@color/Orange"
+                                            android:textSize="16.5dp" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="180dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="4dp"
+                                    android:layout_weight="1"
+                                    app:cardElevation="5dp"
+                                    app:contentPadding="5dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_jobTypeOrMinExp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5sp"
+                                            android:layout_marginTop="8sp"
+                                            android:layout_marginRight="8sp"
+                                            android:layout_marginBottom="5sp"
+                                            android:fontFamily="@font/alegreya_sans"
+                                            android:gravity="center"
+                                            android:text="@string/Job_Type"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="15dp" />
+
+                                        <TextView
+                                            android:id="@+id/et_jobTypeOrMinExp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5sp"
+                                            android:layout_marginTop="8sp"
+                                            android:layout_marginRight="8sp"
+                                            android:layout_marginBottom="5sp"
+                                            android:fontFamily="@font/alegreya_sans"
+                                            android:gravity="center"
+                                            android:text="---"
+                                            android:textColor="@color/Orange"
+                                            android:textSize="16.5dp" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/jobTitle_new2">
+
+                            <LinearLayout
+                                android:id="@+id/llv_cv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="20sp"
+                                android:layout_marginBottom="20sp"
+                                android:background="@drawable/back_grey_round_corners"
+                                android:orientation="vertical">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/tv_cvReq"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5sp"
+                                        android:layout_marginTop="8sp"
+                                        android:layout_marginRight="8sp"
+                                        android:layout_marginBottom="5sp"
+                                        android:fontFamily="@font/alegreya_sans"
+                                        android:text="@string/CV_Required"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:id="@+id/et_cvReq"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5sp"
+                                        android:layout_marginTop="8sp"
+                                        android:layout_marginRight="8sp"
+                                        android:layout_marginBottom="5sp"
+                                        android:fontFamily="@font/alegreya_sans"
+                                        android:text="---"
+                                        android:textColor="@color/Orange"
+                                        android:textSize="16.5dp" />
+                                </TableRow>
+
+                                <LinearLayout
+                                    android:id="@+id/llh_cv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5sp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imv_uploadCV"
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:src="@drawable/upload_cv" />
+
+                                    <TextView
+                                        android:id="@+id/tv_uploadCV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="12sp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/alegreya_sans"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/Upload_CV"
+                                        android:textColor="@android:color/holo_blue_dark"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_reupload"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginTop="5sp"
+                                    android:layout_marginBottom="5sp"
+                                    android:fontFamily="@font/alegreya_sans"
+                                    android:text="@string/Tap_Button_To_Reupload"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="16sp"
+                                    android:visibility="gone" />
+
+                                <!--
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20sp"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="@string/Receive_CV_without"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/et_detail_check_job_upload"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginBottom="10sp"
+                            android:background="@android:color/white"
+                            android:enabled="false"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:inputType="textPersonName|textCapWords"
+                            android:padding="10sp"
+                            android:singleLine="true"
+                            android:textSize="18sp" />
+                            -->
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

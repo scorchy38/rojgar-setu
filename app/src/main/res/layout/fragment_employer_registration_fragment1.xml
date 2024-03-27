@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1AFF9800"
+    tools:context=".Employer.Registration.EmployerRegistrationFragment1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_fragment2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:contentPadding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/cl_next_frag2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lc_employerreg2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/employer_registration"
+                        android:textAlignment="center"
+                        android:textColor="@color/OrangeDark"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/divider2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/DarkGrey" />
+
+                    <TextView
+                        android:id="@+id/lc_orgdetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/Organisation_Details"
+                        android:textAlignment="center"
+                        android:textColor="@color/Orange"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/lc_factname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/Full_Name_Establishment"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_frag1_fullnameoffactory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/back_grey_round_corners"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:hint="@string/Full_Name_Establishment"
+                        android:inputType="textPersonName|textImeMultiLine|textPostalAddress|textCapWords"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/lc_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/Establishment_Address"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_frag1_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/back_grey_round_corners"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:hint="@string/Establishment_Address"
+                        android:inputType="textLongMessage|textMultiLine|textPersonName|textImeMultiLine|textPostalAddress|textCapWords"
+                        android:lines="3"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/uploadLogoLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/back_grey_round_corners"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/uploadLogoIM"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/update_logo" />
+
+                        <TextView
+                            android:id="@+id/textView48"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/alegreya_sans"
+                            android:text="Upload Logo"
+                            android:textColor="@color/OrangeDark"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lc_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/Establishment_Category"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_establishment_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/back_grey_round_corners"
+                         />
+
+                    <TextView
+                        android:id="@+id/lc_sector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/Establishment_Sector"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_establishment_sector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/back_grey_round_corners"
+                         />
+
+                    <TextView
+                        android:id="@+id/lc_subsector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/Establishment_Sub_Sector"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_establishment_subsector"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/back_grey_round_corners"
+                         />
+
+                    <TextView
+                        android:id="@+id/lc_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/State"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/back_grey_round_corners"
+                         />
+
+
+                    <TextView
+                        android:id="@+id/lc_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/District"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_district"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/back_grey_round_corners"
+                         />
+
+                    <TextView
+                        android:id="@+id/lc_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/Pin_Code"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_frag1_pinocde"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/back_grey_round_corners"
+                        android:digits="0123456789"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:hint="@string/Pin_Code"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp" />
+
+
+                    <TextView
+                        android:id="@+id/lc_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/phone_number"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_frag1_telephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/back_grey_round_corners"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:hint="@string/phone_number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp" />
+
+
+                    <TextView
+                        android:id="@+id/lc_websiteurl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/Website"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_frag1_websiteurl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/back_grey_round_corners"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:hint="@string/Website"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp" />
+
+
+                    <TextView
+                        android:id="@+id/lc_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/alegreya_sans"
+                        android:text="@string/status_unit"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_establishment_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/back_grey_round_corners"
+                         />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="30dp" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_next_frag2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_frag2_prev"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                app:cardBackgroundColor="@color/Orange"
+                app:cardCornerRadius="22.5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:src="@drawable/prev_icon_2" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_frag2_next"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                app:cardBackgroundColor="@color/Orange"
+                app:cardCornerRadius="22.5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:src="@drawable/next_icon_2" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

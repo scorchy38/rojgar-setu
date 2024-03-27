@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/employee_nav_item0"
+            android:icon="@drawable/homenav"
+            android:title="@string/Home" />
+        <item
+            android:id="@+id/employee_nav_item1"
+            android:icon="@drawable/viewapplicantsnav"
+            android:title="@string/Search_Job" />
+        <item
+            android:id="@+id/employee_nav_item2"
+            android:icon="@drawable/viewacceptedapplicantsnav"
+            android:title="@string/Applied_Job" />
+
+        <item
+            android:id="@+id/employee_nav_group2_item1"
+            android:icon="@drawable/aboutnav"
+            android:title="@string/Profile" />
+        <item
+            android:id="@+id/employee_nav_signout"
+            android:icon="@drawable/signoutnav"
+            android:title="@string/SignOut" />
+    </group>
+
+</menu>
